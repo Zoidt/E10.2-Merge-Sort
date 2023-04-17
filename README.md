@@ -22,7 +22,7 @@
 
 Merge sort is a recursive sorting algorithm that is known for being efficient. It's especially useful when sorting data stored in structures that have slow random access like files or chains.
 
-[Merge Sort](./images/Merge-Sort.gif)
+![Merge Sort](./images/Merge-Sort.gif)
 
 Conceptually, a merge sort works as follows[^1]:
 
