@@ -12,12 +12,6 @@
 
    ![Setup JDK](./images/Setup-JDK.png)
 
-4. To get the unit tests to work, open `TestMaps.java` and add JUnit to the classpath:
-
-   ![Setup Tests](./images/Setup-Tests.png)
-
-   - Just click "OK" on the resulting dialogue window and all the test-related red squigglies should disappear.
-
 ## 🔍 Context
 
 Merge sort is a recursive sorting algorithm that is known for being efficient. It's especially useful when sorting data stored in structures that have slow random access like files or chains.
