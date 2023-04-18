@@ -78,6 +78,38 @@ public class MergeSort {
 		 * The solution can be found in PrettyMergeSort, but give it a shot
 		 * here before you take a look! ;)
 		 */
+		// splice source array in half
+		int leftIndex = left;
+		int rightIndex = mid + 1;
+
+		for (int i = 0; i < source.length; i++) {
+
+
+			// Base cases if one side finished before the other
+			if(leftIndex > mid){
+				destination[i] = source[rightIndex]; // fill in the rest of the array from right side
+				rightIndex++;
+			} else if (rightIndex>right) {
+				destination[i] = source[leftIndex]; // fill in the rest of the array from the left side
+				leftIndex++;
+			}
+			else {
+				// compare left and right
+				// -1 means left is smaller
+				// 0 means equal
+				// 1 means right is bigger
+				int cmp = source[leftIndex].compareTo(source[rightIndex]);
+				if ( cmp < 0) {
+					// left is smaller
+					destination[i] = source[leftIndex++];
+				} else {
+					// right is smaller
+					destination[i] = source[rightIndex++];
+				}
+			}
+
+
+		}
 	}
 
 	/**
